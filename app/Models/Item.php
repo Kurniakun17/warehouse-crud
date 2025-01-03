@@ -13,6 +13,7 @@ class Item extends Model
         'name',
         'code',
         'category',
+        'material',
         'stock',
         'unit',
         'description'

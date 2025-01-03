@@ -23,6 +23,7 @@
                                 <th>Kode</th>
                                 <th>Nama</th>
                                 <th>Kategori</th>
+                                <th>Material</th>
                                 <th>Stok</th>
                                 <th>Satuan</th>
                                 <th>Aksi</th>
@@ -34,6 +35,7 @@
                                 <td>{{ $item->code }}</td>
                                 <td>{{ $item->name }}</td>
                                 <td>{{ $item->category }}</td>
+                                <td>{{ $item->material }}</td>
                                 <td>{{ $item->stock }}</td>
                                 <td>{{ $item->unit }}</td>
                                 <td>

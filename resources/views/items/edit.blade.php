@@ -50,13 +50,35 @@
                             <select class="form-select @error('category') is-invalid @enderror" 
                                     id="category" name="category" required>
                                 <option value="">Pilih Kategori</option>
-                                <option value="Elektronik" {{ old('category', $item->category) == 'Elektronik' ? 'selected' : '' }}>Elektronik</option>
-                                <option value="Pakaian" {{ old('category', $item->category) == 'Pakaian' ? 'selected' : '' }}>Pakaian</option>
-                                <option value="Makanan" {{ old('category', $item->category) == 'Makanan' ? 'selected' : '' }}>Makanan</option>
-                                <option value="Minuman" {{ old('category', $item->category) == 'Minuman' ? 'selected' : '' }}>Minuman</option>
-                                <option value="Lainnya" {{ old('category', $item->category) == 'Lainnya' ? 'selected' : '' }}>Lainnya</option>
+                                <option value="Baut L12x25mm" {{ old('category') == 'Baut L12x25mm' ? 'selected' : '' }}>Baut L12x25mm</option>
+                                <option value="Baut L12x85mm" {{ old('category') == 'Baut L12x85mm' ? 'selected' : '' }}>Baut L12x85mm</option>
+                                <option value="Baut L12x30mm" {{ old('category') == 'Baut L12x30mm' ? 'selected' : '' }}>Baut L12x30mm</option>
+                                <option value="Baut L12x45mm" {{ old('category') == 'Baut L12x45mm' ? 'selected' : '' }}>Baut L12x45mm</option>
+                                <option value="Baut L6x25mm" {{ old('category') == 'Baut L6x25mm' ? 'selected' : '' }}>Baut L6x25mm</option>
+                                <option value="Nut M8" {{ old('category') == 'Nut M8' ? 'selected' : '' }}>Nut M8</option>
+                                <option value="Nut M10" {{ old('category') == 'Nut M10' ? 'selected' : '' }}>Nut M10</option>
+                                <option value="Nut M12" {{ old('category') == 'Nut M12' ? 'selected' : '' }}>Nut M12</option>
+                                <option value="CLOCK PORTAFILTER" {{ old('category') == 'CLOCK PORTAFILTER' ? 'selected' : '' }}>CLOCK PORTAFILTER</option>
+                                <option value="LOCK PORTAFILTER" {{ old('category') == 'LOCK PORTAFILTER' ? 'selected' : '' }}>LOCK PORTAFILTER</option>
+                                <option value="PORTAFILTER" {{ old('category') == 'PORTAFILTER' ? 'selected' : '' }}>PORTAFILTER</option>
+                                <option value="Power Support 80mm" {{ old('category') == 'Power Support 80mm' ? 'selected' : '' }}>Power Support 80mm</option>
+                                <option value="Pin Arm" {{ old('category') == 'Pin Arm' ? 'selected' : '' }}>Pin Arm</option>
                             </select>
                             @error('category')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="material" class="form-label">Material <span class="text-danger">*</span></label>
+                            <select class="form-select @error('material') is-invalid @enderror" 
+                                    id="material" name="material" required>
+                                <option value="">Pilih Material</option>
+                                <option value="Aluminium 6061" {{ old('material') == 'Aluminium 6061' ? 'selected' : '' }}>Aluminium 6061</option>
+                                <option value="Duralumin" {{ old('material') == 'Duralumin' ? 'selected' : '' }}>Duralumin</option>
+                                <option value="Rubber" {{ old('material') == 'Rubber' ? 'selected' : '' }}>Rubber</option>
+                            </select>
+                            @error('material')
                                 <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
                         </div>

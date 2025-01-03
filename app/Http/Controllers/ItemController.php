@@ -24,6 +24,7 @@ class ItemController extends Controller
             'name' => 'required',
             'code' => 'required|unique:items',
             'category' => 'required',
+            'material' => 'required',
             'stock' => 'required|numeric|min:0',
             'unit' => 'required',
         ]);
@@ -43,6 +44,7 @@ class ItemController extends Controller
             'name' => 'required',
             'code' => 'required|unique:items,code,' . $item->id,
             'category' => 'required',
+            'material' => 'required',
             'stock' => 'required|numeric|min:0',
             'unit' => 'required',
         ]);

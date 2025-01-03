@@ -13,6 +13,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('code')->unique();
             $table->string('category');
+            $table->string('material');
             $table->integer('stock')->default(0);
             $table->string('unit');
             $table->text('description')->nullable();
